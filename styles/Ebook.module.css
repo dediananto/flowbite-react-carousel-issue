@@ -1,0 +1,67 @@
+.list{
+    background:#333;
+}
+.wrap{
+    position:relative;
+    z-index:1;
+    height: 80vh;
+    overflow: hidden;
+}
+.pdf {
+    position: absolute;
+    /* top: -35px; */
+    left: 0;
+    width:100%;
+    z-index:0;
+    background-color: #fff;
+    padding-right: 10px;
+}
+
+.embedCover {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-right: 30px;
+    /* opacity: 0.25;
+    background-color: red; */
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+
+.marquee {
+    /* width: 450px;  */
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    /* box-sizing: border-box;
+    box-shadow: 0 1px 6px #777; */
+  }
+  
+  .marquee > div {
+    display: table-row;
+    white-space: nowrap;
+    /* padding-left: 100%;  */
+    animation: marquee 50s linear infinite; /* Time must be adjusted based on total width of scrolled elements*/
+  }
+  
+  .marquee > div p {
+    /* Padding determines space between scrolled elements */
+    padding-left: 70vw; 
+    display: table-cell; 
+  }
+  
+  /* Make it move */
+  @keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+  }
+
+@keyframes blinker {
+50% {
+    opacity: 0;
+}
+}
